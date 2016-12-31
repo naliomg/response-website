@@ -1,0 +1,244 @@
+/***********
+  * 页面样式
+  **********/
+
+/* =========
+   基本默认样式
+   ========= */
+
+html{font-size: 62.5%;color: #222;}
+::selection{background-color: #b3d4fc;text-shadow: none;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;}
+
+/* =========
+   工具功能样式
+   ========= */
+
+.center-block{display: block;margin-right: auto;margin-left: auto;}
+.pull-right{float: right !important;}
+.pull-left{float: left !important;}
+.text-right{text-align: right !important;}
+.text-left{text-align: left !important;}
+.text-center{text-align: center !important;}
+.hide{display: none !important;}
+.show{display: block !important;}
+.invisible{visibility: hidden;}
+.text-hide{font: 0/0 a;color: transparent;text-shadow: none;background-color: transparent;border: 0;}
+.clear{zoom:1;}
+.clear:after,.clear:before{content: '';display: table;clear: both;}
+
+/* =========
+   浏览器更新
+   ========= */
+
+.browser{background: orange;line-height: 1.5;font-size: 1.5rem;text-align: center;margin: 1rem auto;}
+
+/* =========
+   页面自定义样式
+   ========= */
+
+body{font-size: 1.2rem;line-height: 1.5;background: #f7f7f7;}
+a{color: #666;text-decoration: none;}
+a:hover,a:active{color: #0ae;text-decoration: underline;}
+
+/*header 头部区域*/
+
+header{width: 100%;}
+header .top{line-height: 3rem;padding: 0 1.5rem;color: #fff;background: #555;border-bottom: 1px solid #ecc000;}
+header .top .tel{float: left;}
+header .top ul{float: right;}
+header .top li{display: inline-block;float: left;}
+header .top li+li{border-left: 1px solid #999;}
+header .top li a{display: inline-block;padding: 0 1.5rem;color: #fff;}
+header .main{width: 100%;}
+header .main .brand{padding: 1rem 1.5rem;float: left;}
+header .main ul{float: right;}
+header .main li{display: inline-block;float: left;border-left: 1px solid #f0ede9;}
+header .main li a{display: inline-block;padding: 0 2.5rem;line-height: 5.5rem;font-size: 1.6rem;
+	font-weight: bold;color: #7c7a65;text-decoration: none;}
+header .main li a:hover,
+header .main li a:active,
+header .main li a.active{color: #ffb300;}
+
+@media only screen and (max-width: 50em){
+	header .top li a{padding: 0 1rem;}
+	header .main .brand{float: none;display: block;margin: 1.5rem auto 0.5rem;padding: 0;text-align: center;}
+	header .main ul{float: none;text-align: center;}
+	header .main li{border: none;float: none;margin-left: -7px;}
+	header .main li a{padding: 0 1.5rem;}
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+@media only screen and (max-width: 30em){
+	header .top .tel,header .top li:nth-child(3),header .top li:nth-child(4){display: none;}
+	header .main li a{line-height: 3rem;font-weight: normal;padding: 0 0.5rem;}
+	header .main li:first-child{display: none;}
+}
+
+/*container 主体区域*/
+
+.container{width: 100%;}
+
+/*交易汇总报告信息 section-report*/
+
+.report{width: 90%;padding: 0 5%;background: #7c7365;font-size: 1.5rem;color: #fff;}
+.report .report-line{float: left;padding: 1rem;text-align: left;line-height: 3rem;}
+.report .report-line .amount{display: inline-block;line-height: 3rem;color: #ff9900;letter-spacing: 3px;
+	margin: 0 0.5rem;padding: 0 0.5rem;border-radius: 3px;background: rgba(255,255,255,0.9);font-size: 2.2rem;
+	box-shadow: 1px 1px 1px #333 inset;}
+.report p{line-height: 3rem;float: right;}
+.report p a{color: #fff;}
+
+@media only screen and (max-width: 50em){
+	.report{font-size: 1.2rem;}
+	.report .report-line{padding: 0.8rem 0.2rem;}
+	.report .report-line .amount{background: transparent;font-size: 1.6rem;margin: 0;padding: 0;box-shadow: none;letter-spacing: inherit;}
+	.report .report-line,.report .report-line .amount,.report p{line-height: 2rem;}
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+}
+@media only screen and (max-width: 30em){
+	.report{padding: 0.5rem 5%;}
+	.report .report-line,.report .report-line .amount,.report p{float: none;text-align: center;line-height: 1.5;}
+}
+
+/*ad 广告部分*/
+
+/*.ad{display: none;}*/
+
+/*feature 平台特点部分*/
+
+.feature{width: 90%;margin: 2rem auto;}
+.feature li{float: left;padding: 0.5rem;font-size: 1.4rem;background: #fff;width: calc(33.333333333% - 2rem);
+	box-shadow: 0 0 4px #ccc;}
+.feature li+li{margin-left: 1.5rem;}
+.feature li h3{float: left;width: 40%;text-align: center;color: #ff9900;margin: 0;padding: 0;font-size: 3.3rem;
+	line-height: 5rem;}
+.feature li p{float: left;width: 55%;margin: 0;padding: 0;color: #999;line-height: 1.7rem;}
+
+@media only screen and (max-width: 50em){
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+	.feature li h3,.feature li p{float: none;width: 100%;font-size: 2.6rem;text-align: center;}
+	.feature li h3{line-height: 1.5;}
+	.feature li p{font-size: 1.2rem;}
+}
+@media only screen and (max-width: 30em){
+	.feature{margin: 1rem auto;width: 96%;}
+	.feature li{width: 100%;padding: 0.5rem 0;}
+	.feature li+li{margin: 1rem 0 0;}
+}
+
+/*notice 最新公告部分*/
+
+.notice{width: 90%;margin: 2rem auto;font-size: 1.4rem;background: #fff;height: 3rem;box-shadow: 0 0 4px #ccc;}
+.notice .stay{font-size: 1.4rem;display: inline-block;line-height: 3rem;float: left;color: #999;margin-left: 2rem;}
+.notice a{display: inline-block;width: 54%;margin-left: 1rem;text-decoration: none;text-overflow: ellipsis;	
+	overflow: hidden;white-space: nowrap;font-size: 1.4rem;line-height: 3rem;float: left;}
+.notice a span{color: #999;font-size: 1.2rem;margin-right: 1rem;}
+.notice a.more{display: inline-block;width: auto;float: right;color: #ff9900;margin-right: 2rem;}
+
+@media only screen and (max-width: 50em){
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+}
+@media only screen and (max-width: 30em){
+	.notice{width: 96%;margin: 0.5rem auto;height: auto;padding: 0.5rem 0;}
+	.notice .stay{line-height: 1.5;margin-left: 1rem;font-size: 1.2rem;}
+	.notice a{margin-left: 0.5rem;line-height: 1.5;font-size: 1.2rem;}
+	.notice a span{display: none;}
+	.notice a.more{margin: 0 0.5rem 0 0;}
+}
+
+/*product 产品介绍部分*/
+
+.product{width: 90%;margin: 2rem auto;font-size: 1.4rem;background: #f5f9fa;border-top: 2px solid #ff9900;
+	box-shadow: 0 0 4px #ccc;}
+.product h2{float: left;width: 20%;margin-top: 3rem;text-align: center;font-size: 2.4rem;font-weight: normal;
+	color: #635c51;}
+.product h2 em{display: block;margin-top: 1rem;font-size: 1.6rem;}
+.product h2 em:first-child{margin-top: 3rem;}
+.product .product-container{width: 79.5%;float: right;background: #fff;border-left: 1px solid #eee;}
+.product .product-container .item{width: 100%;}
+.product .product-container .item+.item{border-top: 1px solid #eee;}
+.product .product-container .item h3{float: left;width: 30%;margin: 1.5rem 0;font-size: 1.4rem;
+	font-weight: normal;text-align: center;}
+.product .item h3 em{margin-right: 0.5rem;font-size: 3.6rem;font-style: normal;color: #8b999b;}
+.product .item .ad-main{float: left;width: 48%;padding: 1rem;border-left: 1px solid #eee;
+	border-right: 1px solid #eee;font-size: 1.4rem;}
+.product .item .ad-main p{float: left;text-align: center;width: 50%;}
+.product .item .ad-main p span{display: inline-block;font-size: 2.4rem;color: #ff9900;}
+.product .item .ad-main p span i{font-size: 1.2rem;font-style: normal;color: #999;}
+.product .item .buy-btn{float: left;width: calc(22% - 4.4rem);padding: 1rem;}
+.product .item .buy-btn a{display: block;width: 90%;margin: 1.5rem auto;max-width: 12rem;line-height: 4rem;
+	text-align: center;text-decoration: none;color: #fff;background: #ff9900;border-radius: 5px;}
+.product .item .buy-btn .disable{background: #ccc;}
+
+@media only screen and (max-width: 50em){
+	.product h2{float: none;width: 100%;margin-top: 2rem;font-size: 2.2rem;}
+	.product h2 em{display: inline;font-size: 1.2rem;}
+	.product h2 em:first-child{margin-top: 0;}
+	.product .product-container{float: none;width: 100%;border: none;}
+	.product .product-container .item h3{margin-bottom: 0;}
+	.product .item h3 em{font-size: 2.4rem;}
+	.product .item .ad-main{padding: 1rem 1rem 0;font-size: 1.2rem;}
+	.product .item .ad-main p span{font-size: 2rem;}
+	.product .item .buy-btn a{margin: 0.5rem auto;}
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+}
+@media only screen and (max-width: 30em){
+	.product{margin: 1rem auto;}
+	.product h2 em:first-child:before{content: "";display: block;}
+	.product .item h3 em{font-size: 2rem;margin-right: 0;}
+	.product .item .ad-main{width: 70%;padding: 0.5rem 0;border: none;}
+	.product .item .ad-main p span{font-size: 1.8rem;}
+	.product .item .buy-btn{clear: both;float: none;width: 100%;padding: 0;}
+	.product .item .buy-btn a{margin-top: 0;max-width: 24rem;}
+}
+
+
+/*content-footer 内容导航部分*/
+
+.footer{width: 100%;border-top: 2px solid #eee;background: #fff;padding: 2rem 0;}
+.footer-container{width: 90%;margin: 0 auto;background: url();}
+.footer-container .logo{float: left;display: block;width: 20%;height: 35px;
+	background: url("../img/logo@1x.png") no-repeat left;background-size: 150px 35px;
+	-webkit-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);}
+.footer-container ul{float: left;width: 15%;}
+.footer-container ul li{font-size: 1.4rem;line-height: 2.4rem;text-align: center;}
+.footer-container ul li.title{font-size: 1.6rem;line-height: 3rem;}
+
+@media only screen and (max-width: 50em){
+	.footer-container .logo{display: none;}
+	.footer-container ul{width: 20%;}
+	.footer-container ul li{font-size: 1.2rem;line-height: 2.2rem;}
+	.footer-container ul li.title{font-size: 1.2rem;line-height: 2.5rem;}
+}
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+}
+@media only screen and (max-width: 30em){
+	.footer-container{width: 96%;}
+	.footer-container ul li.title{font-size: 1.2rem;line-height: 2rem;}
+}
+
+
+/*footer 底部区域*/
+
+footer{width: 100%;padding: 3rem 0 2.5rem;background: #ededed;}
+footer ul{text-align: center;}
+footer ul li{display: inline-block;}
+footer ul .icon{display: inline-block;text-indent: -999rem;margin-right: 1.5rem;
+	background: url("../img/cert1.png") no-repeat;background-size: 466px 447px;overflow: hidden;}
+footer ul .icon-zfywxk{width: 38px;height: 27px;background-position: -369px -45px;}
+footer ul .icon-pcirk{width: 78px;height: 27px;background-position: -110px -96px;}
+footer ul .icon-visayz{width: 36px;height: 27px;background-position: -426px -90px;}
+footer ul .icon-vsjmfw{width: 63px;height: 27px;background-position: -401px -186px;}
+footer ul .icon-wlgs{width: 22px;height: 27px;background-position: -48px -48px;}
+footer ul .icon-rzcx{width: 75px;height: 27px;background-position: 0px -320px;}
+footer ul .icon-gs{width: 27px;height: 27px;background: url("../img/cert2.png") no-repeat;background-size: 27px;}
+footer p{text-align: center;color: #999;}

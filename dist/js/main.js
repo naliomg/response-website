@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".owl-carousel").owlCarousel({items:1,loop:!0,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0})});
